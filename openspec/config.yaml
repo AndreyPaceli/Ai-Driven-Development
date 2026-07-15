@@ -1,13 +1,40 @@
 schema: spec-driven
 
-# Project context (optional)
-# This is shown to AI when creating artifacts.
-# Add your tech stack, conventions, style guides, domain knowledge, etc.
-# Example:
-#   context: |
-#     Tech stack: TypeScript, React, Node.js
-#     We use conventional commits
-#     Domain: e-commerce platform
+# Project context — shown to AI when creating artifacts.
+# Full reference: openspec/project.md
+context: |
+  Poupig — aplicação de finanças pessoais. Monorepo TurboRepo + npm workspaces,
+  namespace @poupig. Detalhes completos em openspec/project.md.
+
+  Stack:
+  - Backend: NestJS 11, Passport/JWT, Prisma 7 + PostgreSQL (Docker), Jest 30.
+  - Frontend: Next.js 16 (App Router) + React 19, Tailwind v4, Radix UI,
+    react-hook-form. Atenção: Next tem breaking changes — ver apps/frontend/AGENTS.md.
+  - Domínio compartilhado: packages/shared (@poupig/shared, TS puro) e módulos
+    de negócio em modules/* (packages @poupig/*, ainda a criar).
+
+  Arquitetura e convenções:
+  - Nomes de código em INGLÊS (folders/files/símbolos): model, use-case, provider,
+    *.entity.ts, *.repository.ts, *.use-case.ts, *.query.ts, *.dto.ts, *.vo.ts,
+    *.service.ts, *.controller.ts.
+  - Padrão Result (@poupig/shared) para validação/erros; o domínio NÃO lança
+    exceções. Conversão para exceções HTTP só nos controllers (padrão Genérico).
+  - DDD: domínio puro em modules/* e packages/shared, sem dependência de framework;
+    infraestrutura (Prisma/Nest) nos apps/*.
+  - CQRS de leitura: escrita via *.repository.ts, leitura via *.query.ts + DTOs.
+  - Reutilizar os blocos base e Value Objects de @poupig/shared antes de criar novos.
+  - Prisma modular por domínio (apps/backend/prisma/models/*.model.prisma); seed
+    técnico em prisma/seed/main.ts; migrations NÃO rodam automaticamente.
+  - Frontend: rotas em grupos (public)/(private); navegação vive no layout do
+    grupo, não em shared/; forms com schemas em modules/<domain>/data/*.schema.ts.
+
+  Fluxo de trabalho:
+  - OpenSpec (spec-driven) dirige o trabalho; skills em .claude/skills/ para
+    scaffolding — sempre preferir a skill indicada (config-*, module-*, backend-*,
+    frontend-form-schema).
+  - Commits no estilo conventional commits (feat:, chore:, fix: ...).
+  - Estado atual: só a fundação existe; próxima feature = registro de usuário/auth
+    (.docs/prompts/02-auth-registrar-usuario.md).
 
 # Per-artifact rules (optional)
 # Add custom rules for specific artifacts.
