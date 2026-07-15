@@ -1,0 +1,4 @@
+interface:
+  display_name: 'Module DTO'
+  short_description: 'Criar DTOs de modulo no padrao do projeto'
+  default_prompt: 'Crie ou revise DTOs de entrada/saida e de query CQRS de modulo, com tipagem adequada ao consumo e sem vazar entidade/ORM.'

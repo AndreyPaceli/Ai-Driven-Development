@@ -1,0 +1,4 @@
+interface:
+  display_name: "Backend Nest Config"
+  short_description: "Reconstruir deterministicamente a camada compartilhada do backend NestJS com PT-BR"
+  default_prompt: "Use $config-shared-backend para reconstruir a camada compartilhada do backend NestJS em apps/backend/src/shared/, instalando dependências JWT/Passport, copiando os assets canônicos em português do Brasil (FiltroExcecaoApi, GuardaJwt, EstrategiaJwt, UsuarioAtual, Publica, ModuloCompartilhado) e garantindo que UsuarioAutenticado está em packages/shared. Execute: node .claude/skills/config-shared-backend/scripts/apply.js"

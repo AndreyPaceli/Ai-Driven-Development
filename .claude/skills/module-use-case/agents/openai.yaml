@@ -1,0 +1,4 @@
+interface:
+  display_name: 'Module Use Case'
+  short_description: 'Criar casos de uso de modulo no padrao Generico'
+  default_prompt: 'Crie ou revise um caso de uso de modulo seguindo o padrao do projeto (UseCase/Result), com orquestracao de entidades, providers e testes.'

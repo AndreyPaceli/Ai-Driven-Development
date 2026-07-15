@@ -1,0 +1,4 @@
+interface:
+  display_name: 'Module Domain Service'
+  short_description: 'Criar servicos de dominio de modulo em modules/*'
+  default_prompt: 'Crie ou revise um servico de dominio de modulo no padrao do projeto, restrito a arquivos em modules/*/src/**, com regras puras e testes.'

@@ -1,0 +1,4 @@
+interface:
+  display_name: 'Module Entity'
+  short_description: 'Criar entidades de modulo no padrao Generico'
+  default_prompt: 'Crie ou revise uma entidade de modulo seguindo o padrao do projeto (Entity/Result), com invariantes, validacao e testes.'

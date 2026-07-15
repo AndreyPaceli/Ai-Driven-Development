@@ -1,0 +1,4 @@
+interface:
+  display_name: 'Module Query CQRS'
+  short_description: 'Criar queries de modulo no padrao CQRS'
+  default_prompt: 'Crie ou revise queries CQRS de leitura de modulo, com DTOs orientados ao consumo e separacao clara de comandos.'

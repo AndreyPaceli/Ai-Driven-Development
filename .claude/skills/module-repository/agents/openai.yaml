@@ -1,0 +1,4 @@
+interface:
+  display_name: 'Module Repository'
+  short_description: 'Criar repositorios de modulo no padrao Generico'
+  default_prompt: 'Crie ou revise contratos e implementacoes de repository de modulo no padrao do projeto, com Result, mapeamento de entidade e separacao de queries CQRS.'

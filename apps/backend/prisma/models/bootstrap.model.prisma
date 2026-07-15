@@ -1,0 +1,7 @@
+// Temporary bootstrap model to keep initial Prisma setup operational.
+// Remove this file once real domain models/migrations are in place.
+model PrismaBootstrap {
+  id        String   @id @default(cuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

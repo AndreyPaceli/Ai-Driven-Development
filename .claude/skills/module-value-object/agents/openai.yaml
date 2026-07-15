@@ -1,0 +1,4 @@
+interface:
+  display_name: 'Module Value Object'
+  short_description: 'Criar Value Objects de modulo no padrao do projeto'
+  default_prompt: 'Crie ou revise um Value Object de modulo seguindo o padrao do projeto (ValueObject/Result), com validacao, normalizacao e create/tryCreate.'

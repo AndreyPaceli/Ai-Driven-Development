@@ -1,0 +1,4 @@
+interface:
+  display_name: "Module Aggregate"
+  short_description: "Create the base aggregate scaffold in an existing module using English naming"
+  default_prompt: "Use $module-aggregate to deterministically create an aggregate scaffold inside modules/<module>, always generating model, provider, use-case, index.ts, and use-case modes in english with either crud or example."

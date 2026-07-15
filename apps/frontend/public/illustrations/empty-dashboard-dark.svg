@@ -1,0 +1,123 @@
+<svg viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustracao de dashboard vazio aguardando implementacao">
+  <defs>
+    <linearGradient id="ed-bg" x1="0" y1="0" x2="1600" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#020409"/>
+    </linearGradient>
+    <linearGradient id="ed-card" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="ed-accent" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="0.55" stop-color="#e4e4e7"/>
+      <stop offset="1" stop-color="#71717a"/>
+    </linearGradient>
+    <linearGradient id="ed-area" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e4e4e7" stop-opacity="0.28"/>
+      <stop offset="1" stop-color="#e4e4e7" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="ed-glow" cx="0.5" cy="0.4" r="0.65">
+      <stop offset="0" stop-color="#3b4a66" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#3b4a66" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- backdrop -->
+  <rect width="1600" height="1000" rx="28" fill="url(#ed-bg)"/>
+  <rect x="220" y="80" width="1160" height="720" rx="120" fill="url(#ed-glow)"/>
+
+  <!-- main dashboard panel -->
+  <g>
+    <rect x="120" y="120" width="1360" height="760" rx="28" fill="#0c1424" stroke="#ffffff" stroke-opacity="0.08"/>
+
+    <!-- sidebar -->
+    <rect x="120" y="120" width="220" height="760" rx="28" fill="#ffffff" fill-opacity="0.025"/>
+    <circle cx="170" cy="178" r="16" fill="url(#ed-accent)"/>
+    <rect x="198" y="170" width="96" height="16" rx="8" fill="#ffffff" fill-opacity="0.16"/>
+    <g fill="#ffffff" fill-opacity="0.10">
+      <rect x="152" y="252" width="156" height="14" rx="7" fill="#ffffff" fill-opacity="0.22"/>
+      <rect x="152" y="304" width="132" height="14" rx="7"/>
+      <rect x="152" y="356" width="148" height="14" rx="7"/>
+      <rect x="152" y="408" width="120" height="14" rx="7"/>
+      <rect x="152" y="460" width="140" height="14" rx="7"/>
+    </g>
+    <rect x="140" y="240" width="180" height="40" rx="12" fill="#ffffff" fill-opacity="0.06"/>
+
+    <!-- topbar -->
+    <rect x="372" y="156" width="280" height="22" rx="11" fill="#ffffff" fill-opacity="0.20"/>
+    <rect x="372" y="190" width="180" height="14" rx="7" fill="#ffffff" fill-opacity="0.10"/>
+    <rect x="1196" y="158" width="252" height="44" rx="22" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.08"/>
+    <circle cx="1224" cy="180" r="9" fill="#ffffff" fill-opacity="0.25"/>
+    <rect x="1242" y="173" width="150" height="14" rx="7" fill="#ffffff" fill-opacity="0.12"/>
+
+    <!-- KPI cards -->
+    <g>
+      <rect x="372" y="252" width="248" height="150" rx="18" fill="url(#ed-card)" stroke="#ffffff" stroke-opacity="0.07"/>
+      <rect x="396" y="280" width="64" height="12" rx="6" fill="#ffffff" fill-opacity="0.16"/>
+      <rect x="396" y="306" width="130" height="26" rx="8" fill="#ffffff" fill-opacity="0.30"/>
+      <rect x="396" y="352" width="92" height="12" rx="6" fill="#ffffff" fill-opacity="0.10"/>
+
+      <rect x="648" y="252" width="248" height="150" rx="18" fill="url(#ed-card)" stroke="#ffffff" stroke-opacity="0.07"/>
+      <rect x="672" y="280" width="64" height="12" rx="6" fill="#ffffff" fill-opacity="0.16"/>
+      <rect x="672" y="306" width="110" height="26" rx="8" fill="#ffffff" fill-opacity="0.30"/>
+      <rect x="672" y="352" width="120" height="12" rx="6" fill="#ffffff" fill-opacity="0.10"/>
+
+      <rect x="924" y="252" width="248" height="150" rx="18" fill="url(#ed-card)" stroke="#ffffff" stroke-opacity="0.07"/>
+      <rect x="948" y="280" width="64" height="12" rx="6" fill="#ffffff" fill-opacity="0.16"/>
+      <rect x="948" y="306" width="140" height="26" rx="8" fill="#ffffff" fill-opacity="0.30"/>
+      <rect x="948" y="352" width="80" height="12" rx="6" fill="#ffffff" fill-opacity="0.10"/>
+
+      <rect x="1200" y="252" width="248" height="150" rx="18" fill="url(#ed-card)" stroke="#ffffff" stroke-opacity="0.07"/>
+      <rect x="1224" y="280" width="64" height="12" rx="6" fill="#ffffff" fill-opacity="0.16"/>
+      <rect x="1224" y="306" width="96" height="26" rx="8" fill="#ffffff" fill-opacity="0.30"/>
+      <rect x="1224" y="352" width="108" height="12" rx="6" fill="#ffffff" fill-opacity="0.10"/>
+    </g>
+
+    <!-- line / area chart -->
+    <g>
+      <rect x="372" y="436" width="652" height="396" rx="18" fill="url(#ed-card)" stroke="#ffffff" stroke-opacity="0.07"/>
+      <rect x="400" y="468" width="160" height="16" rx="8" fill="#ffffff" fill-opacity="0.18"/>
+      <rect x="400" y="494" width="96" height="12" rx="6" fill="#ffffff" fill-opacity="0.08"/>
+
+      <!-- gridlines -->
+      <g stroke="#ffffff" stroke-opacity="0.05">
+        <line x1="400" y1="600" x2="996" y2="600"/>
+        <line x1="400" y1="670" x2="996" y2="670"/>
+        <line x1="400" y1="740" x2="996" y2="740"/>
+      </g>
+
+      <!-- area fill -->
+      <path d="M400 720 L470 668 L540 692 L610 612 L680 642 L750 568 L820 596 L890 524 L960 556 L996 540 L996 788 L400 788 Z" fill="url(#ed-area)"/>
+      <!-- line -->
+      <path d="M400 720 L470 668 L540 692 L610 612 L680 642 L750 568 L820 596 L890 524 L960 556 L996 540" fill="none" stroke="url(#ed-accent)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <g fill="#0c1424" stroke="url(#ed-accent)" stroke-width="3">
+        <circle cx="610" cy="612" r="6"/>
+        <circle cx="750" cy="568" r="6"/>
+        <circle cx="890" cy="524" r="6"/>
+      </g>
+    </g>
+
+    <!-- bar chart -->
+    <g>
+      <rect x="1048" y="436" width="400" height="396" rx="18" fill="url(#ed-card)" stroke="#ffffff" stroke-opacity="0.07"/>
+      <rect x="1076" y="468" width="150" height="16" rx="8" fill="#ffffff" fill-opacity="0.18"/>
+      <rect x="1076" y="494" width="90" height="12" rx="6" fill="#ffffff" fill-opacity="0.08"/>
+      <g>
+        <rect x="1092" y="660" width="46" height="124" rx="8" fill="#ffffff" fill-opacity="0.14"/>
+        <rect x="1158" y="606" width="46" height="178" rx="8" fill="#ffffff" fill-opacity="0.20"/>
+        <rect x="1224" y="690" width="46" height="94" rx="8" fill="#ffffff" fill-opacity="0.14"/>
+        <rect x="1290" y="560" width="46" height="224" rx="8" fill="url(#ed-accent)" fill-opacity="0.85"/>
+        <rect x="1356" y="636" width="46" height="148" rx="8" fill="#ffffff" fill-opacity="0.14"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- floating "empty" badge -->
+  <g transform="translate(800 540)">
+    <g stroke="url(#ed-accent)" stroke-width="6" stroke-linecap="round" fill="none">
+      <line x1="0" y1="-34" x2="0" y2="34"/>
+      <line x1="-34" y1="0" x2="34" y2="0"/>
+    </g>
+  </g>
+</svg>
